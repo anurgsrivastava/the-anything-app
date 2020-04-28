@@ -1,0 +1,17 @@
+{
+  "name": "the-anything-app",
+  "displayName": "the-anything-app",
+  "expo": {
+    "name": "the-anything-app",
+    "slug": "the-anything-app",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
