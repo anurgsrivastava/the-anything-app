@@ -3,6 +3,7 @@
 *.keystore
 .history/
 *.tgz
+*.editorconfig
 
 # git-secret rules
 .secrets/.
