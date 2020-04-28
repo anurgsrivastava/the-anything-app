@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import SplashScreen from "react-native-splash-screen";
 
-export default class App extends React.PureComponent() {
+class App extends React.PureComponent {
   componentDidMount() {
     SplashScreen.hide();
   }
@@ -24,3 +24,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default App;
