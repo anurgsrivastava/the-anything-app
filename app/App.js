@@ -10,7 +10,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello Chinni!</Text>
+        <Text>Hello!</Text>
       </View>
     );
   }
