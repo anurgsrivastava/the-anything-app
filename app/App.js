@@ -1,28 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import SplashScreen from "react-native-splash-screen";
+import { default as Colors } from "./resources/colors";
 
-class App extends React.PureComponent {
-  componentDidMount() {
-    SplashScreen.hide();
-  }
+export default function App() {
+  useEffect(() => SplashScreen.hide());
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Hello!</Text>
-      </View>
-    );
-  }
+  return (
+    <View style={styles.container}>
+      <Text>Hello!</Text>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
-    justifyContent: "center",
-  },
+    backgroundColor: Colors.white,
+    flex: 1,
+    justifyContent: "center"
+  }
 });
-
-export default App;
