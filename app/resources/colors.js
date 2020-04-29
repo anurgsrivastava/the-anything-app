@@ -9,6 +9,6 @@ export default {
   orange: "rgba(232, 119, 34, 1)",
   green: "rgba(74, 166, 84, 1)",
   cream: "rgba(233, 229, 217, 1)",
-  parrotBlue: "rgba(46, 196, 182, 1)",
+  parrotBlue: "rgba(0, 222, 222, 1)",
   ultraMarine: "rgba(66, 114, 170, 1)"
 };
