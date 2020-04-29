@@ -1,12 +1,15 @@
 import React from "react";
-import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { default as Colors } from "../resources/colors";
 
 function Settings(props) {
   const { navigation } = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Settings</Text>
+      <Image
+        style={styles.image}
+        source={require("../resources/images/batman_logo.png")}
+      />
       <TouchableOpacity
         style={styles.buttonContainer}
         onPress={() => navigation.popToTop()}
@@ -22,7 +25,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.black,
     borderRadius: 5,
     margin: 20,
-    padding: 10
+    padding: 15
   },
   buttonText: {
     color: Colors.white,
@@ -32,12 +35,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: Colors.white,
     flex: 1,
-    justifyContent: "center"
+    flexDirection: "column",
+    justifyContent: "space-around"
   },
-  text: {
-    color: Colors.black,
-    fontSize: 24,
-    fontWeight: "bold"
+  image: {
+    borderRadius: 130,
+    height: 130,
+    width: 130
   }
 });
 

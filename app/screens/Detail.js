@@ -8,7 +8,6 @@ function Detail(props) {
   const { name, home, species } = item;
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Detail Screen</Text>
       <View style={styles.card}>
         <Text style={styles.cardText}>Name: {name}</Text>
         <Text style={styles.cardText}>Home: {home}</Text>
@@ -39,26 +38,23 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: Colors.black,
     borderRadius: 10,
-    height: 100,
+    flexDirection: "column",
+    height: 150,
+    justifyContent: "space-around",
     margin: 10,
     padding: 10,
-    width: 350
+    width: 325
   },
   cardText: {
     color: Colors.parrotBlue,
-    fontSize: 18,
-    marginBottom: 5
+    fontSize: 18
   },
   container: {
     alignItems: "center",
     backgroundColor: Colors.white,
     flex: 1,
-    justifyContent: "center"
-  },
-  text: {
-    color: Colors.black,
-    fontSize: 24,
-    fontWeight: "bold"
+    flexDirection: "column",
+    justifyContent: "space-around"
   }
 });
 

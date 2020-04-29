@@ -12,7 +12,6 @@ function Home(props) {
   const { navigation } = props;
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
       <TouchableOpacity
         style={styles.buttonContainer}
         onPress={() => navigation.navigate("Detail", { item: character })}
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.black,
     borderRadius: 5,
     margin: 20,
-    padding: 10
+    padding: 15
   },
   buttonText: {
     color: Colors.parrotBlue,
@@ -39,11 +38,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     flex: 1,
     justifyContent: "center"
-  },
-  text: {
-    color: Colors.black,
-    fontSize: 24,
-    fontWeight: "bold"
   }
 });
 
